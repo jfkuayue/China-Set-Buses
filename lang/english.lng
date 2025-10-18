@@ -4,7 +4,7 @@ STR_GRF_NAME        :China Set: Buses {VERSION_STRING}
 STR_GRF_DESC        :The Bus sector of the China Set of OpenTTD.
 STR_GRF_URL         :https://www.tt-forums.net/viewtopic.php?t=91092
 STR_GRF_DESC_EXTRA  :Buses: Short-distance Buses, Long-distance Coaches, and Trolleybuses in China Mainland. More contents in the future.
-STR_GRF_DESC_README :See readme for details.
+STR_GRF_DESC_README :See readme for details.{RED}The current version is not the complete version, and it is not recommended to use it for official gameplay or long-term saves.
 
 STR_PARAM_LOADING_SPEED         :Loading Speed
 STR_PARAM_LOADING_SPEED_DESC    :Adjust vehicle loading speed. Default is 100%.
@@ -28,9 +28,23 @@ STR_DESC_2                  :{STRING}{}{STRING}
 STR_DESC_3                  :{STRING}{}{STRING}{}{STRING}
 STR_DESC_4                  :{STRING}{}{STRING}{}{STRING}{}{STRING}
 STR_DESC_5                  :{STRING}{}{STRING}{}{STRING}{}{STRING}{}{STRING}
+STR_DESC_6                  :{STRING}{}{STRING}{}{STRING}{}{STRING}{}{STRING}{}{STRING}
+STR_LV                      :{STRING}{STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING}
 
-STR_NAME_LCK6820HG          :Zhongtong LCK6820HG (Diesel)
+STR_NAME_LCK6820HG          :LCK6820HG
+STR_NAME_BK640              :BK640
+STR_NAME_JNP6181GVC         :JNP6181GVC
+STR_NAME_ZK6845BEVG1        :ZK6845BEVG1
+STR_NAME_ZK6125CHEVNPG29    :ZK6125CHEVNPG29
+STR_NAME_JT663              :JT663
+STR_NAME_JNP6127EA          :JNP6127EA
+STR_NAME_GTQ6105BEVBT20     :GTQ6105BEVBT20
 
+STR_1                       :1
+STR_2                       :2
+
+STR_X                       :To Be Determined
 STR_RELDEC                  :Reliability Decay Speed: {COMMA}
 STR_COMFORT                 :Comfort: {COMMA}
 STR_LOADING                 :Loading Speed: {COMMA}
+STR_LIVERY_AVAILABLE        :{BLACK}Livery Availability:

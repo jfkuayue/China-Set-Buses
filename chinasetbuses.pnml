@@ -11,8 +11,22 @@
 // IDs
 #include "src/vehicleid.pnml"
 
-// Buses
-#include "src/buses/lck6820hg.pnml"
+//Articulated
+#include "src/Articulated/JNP6181GVC.pnml"
+
+//Double-Decker
+
+//Three-Axle
+
+//Two-Axle
+#include "src/Two-Axle/BK640.pnml"
+#include "src/Two-Axle/GTQ6105BEVBT20.pnml"
+#include "src/Two-Axle/JNP6127EA.pnml"
+#include "src/Two-Axle/JT663.pnml"
+#include "src/Two-Axle/LCK6820HG.pnml"
+#include "src/Two-Axle/ZK6125CHEVNPG29.pnml"
+#include "src/Two-Axle/ZK6845BEVG1.pnml"
+
 
 
 // Sort Vehicles

@@ -1,0 +1,63 @@
+spriteset (spriteset_ZK6845BEVG1_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_purchase_32bpp ("Two-Axle", "ZK6845BEVG1_YT")
+}
+
+spriteset (spriteset_ZK6845BEVG1_YT, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_32bpp ("Two-Axle", "ZK6845BEVG1_YT")
+}
+
+spriteset (spriteset_ZK6845BEVG1_TJBH, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_32bpp ("Two-Axle", "ZK6845BEVG1_TJBH")
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_ZK6845BEVG1_cargo_subtype, cargo_subtype) {
+    0: return string(STR_1);
+    1: return string(STR_2);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_ZK6845BEVG1_graphics, cargo_subtype) {
+    0: spriteset_ZK6845BEVG1_YT;
+    1: spriteset_ZK6845BEVG1_TJBH;
+}
+
+item (FEAT_ROADVEHS, ZK6845BEVG1) {
+    property {
+        sprite_id:                      SPRITE_ID_NEW_ROADVEH;
+        climates_available:             ALL_CLIMATES;
+        running_cost_base:              RUNNING_COST_ROADVEH;
+        refit_cost:                     0;
+        misc_flags:                     bitmask(ROADVEH_FLAG_AUTOREFIT);
+        cost_factor:                    1;
+        running_cost_factor:            1;
+
+        length:                         7;
+        refittable_cargo_classes:       bitmask(CC_PASSENGERS);
+        cargo_allow_refit:              [PASS, TOUR, YETI, YETY];
+        default_cargo_type:             PASS;
+
+        name:                           string(STR_NAME_ZK6845BEVG1);
+        introduction_date:              date(2013,02,18);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   20;
+        reliability_decay:              15;
+
+        power:                          100 kW;
+        weight:                         8.5 ton;
+        tractive_effort_coefficient:    0.3;
+        speed:                          70 km/h;
+
+        cargo_capacity:                 55;
+        loading_speed:                  9 << param_loading_speed;
+        cargo_age_period:               169 << param_cargo_decay;
+    }
+    graphics {
+        default:                        switch_ZK6845BEVG1_graphics;
+        purchase:                       spriteset_ZK6845BEVG1_purchase;
+        cargo_subtype_text:             switch_ZK6845BEVG1_cargo_subtype;
+
+        cost_factor:                    67;
+        running_cost_factor:            143 * runningcostfactor();
+        purchase_running_cost_factor:   143 * 8;
+    }
+}

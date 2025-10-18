@@ -13,65 +13,61 @@
   "pad_to_full_length": false,
   "detail_boost": 15.0,
   "falloff_adjustment": 0.25,
-  "joggle": 1,
-  "is_hill": false,
-  "max_colour_push": 2,
-  "fosterise": true,
   "size": {
-    "x": 192,
-    "y": 40,
-    "z": 72
+    "x": 256,
+    "y": 48,
+    "z": 80
   },
   "render_elevation": 30,
   "sprites": [
     {
       "angle": 0,
-      "width": 40,
-      "height": 160,
+      "width": 36,
+      "height": 224,
       "flip": true,
       "render_elevation": 33
     },
     {
       "angle": 45,
-      "width": 116,
-      "height": 109,
+      "width": 160,
+      "height": 144,
       "flip": true
     },
     {
       "angle": 90,
-      "width": 192,
+      "width": 256,
       "height": 80,
       "flip": true
     },
     {
       "angle": 135,
-      "width": 116,
-      "height": 109,
+      "width": 160,
+      "height": 144,
       "flip": true
     },
     {
       "angle": 180,
-      "width": 40,
-      "height": 160,
+      "width": 36,
+      "height": 224,
       "flip": true,
       "render_elevation": 33
     },
     {
       "angle": 225,
-      "width": 116,
-      "height": 109,
+      "width": 160,
+      "height": 144,
       "flip": true
     },
     {
       "angle": 270,
-      "width": 192,
+      "width": 256,
       "height": 80,
       "flip": true
     },
     {
       "angle": 315,
-      "width": 116,
-      "height": 109,
+      "width": 160,
+      "height": 144,
       "flip": true
     }
   ]

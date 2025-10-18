@@ -1,3 +1,26 @@
 //This file sets all vehicle IDs. Each type has a range of 32/64/128/256/512/768/1024 possible IDs.
 
+//暂时分区(512-1000)
 item (FEAT_ROADVEHS, lck6820hg, 512) {}
+
+
+//双轴单机Two-Axle（1000-1999）
+item (FEAT_ROADVEHS, BK640, 1000) {}
+item (FEAT_ROADVEHS, LCK6820HG, 1001) {}
+item (FEAT_ROADVEHS, ZK6845BEVG1, 1002) {}
+item (FEAT_ROADVEHS, ZK6125CHEVNPG29, 1003) {}
+item (FEAT_ROADVEHS, JT663, 1004) {}
+item (FEAT_ROADVEHS, JNP6127EA, 1005) {}
+item (FEAT_ROADVEHS, GTQ6105BEVBT20, 1005) {}
+
+
+//三轴单机Three-Axle（2000-2499）
+
+
+//双层Double-Decker（2500-2999）
+
+
+//铰接Articulated（3000-3499）
+item (FEAT_ROADVEHS, JNP6181GVC, 3000) {}
+
+
