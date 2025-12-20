@@ -36,7 +36,7 @@ item (FEAT_ROADVEHS, JNP6181GVC) {
 
         name:                           string(STR_NAME_JNP6181GVC);
         introduction_date:              date(2012,1,1);
-        model_life:                     VEHICLE_NEVER_EXPIRES;/
+        model_life:                     VEHICLE_NEVER_EXPIRES;
         vehicle_life:                   20;
         reliability_decay:              15;
 

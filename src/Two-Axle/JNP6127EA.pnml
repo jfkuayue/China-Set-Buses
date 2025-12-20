@@ -55,5 +55,5 @@ item (FEAT_ROADVEHS, JNP6127EA) {
         cost_factor:                    67;
         running_cost_factor:            143 * runningcostfactor();
         purchase_running_cost_factor:   143 * 8;
-
+    }
 }
