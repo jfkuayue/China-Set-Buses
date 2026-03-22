@@ -36,24 +36,24 @@ item (FEAT_ROADVEHS, JNP6181GVC) {
 
         name:                           string(STR_NAME_JNP6181GVC);
         introduction_date:              date(2012,1,1);
-        model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   15;
-        reliability_decay:              15;
-
+        model_life:                     60;       
+        vehicle_life:                   13;
+        reliability_decay:              4;
+        retire_early:                   50;
         power:                          239 kW;
         weight:                         17.85 ton;
         tractive_effort_coefficient:    0.3;
         speed:                          80 km/h;
 
         cargo_capacity:                 78;
-        loading_speed:                  9 << param_loading_speed;
+        loading_speed:                  60 << param_loading_speed;
         cargo_age_period:               157 << param_cargo_decay;
     }
     graphics {
         default:                        switch_JNP6181GVC_graphics;
         purchase:                       spriteset_JNP6181GVC_BJ_purchase;
         articulated_part:               switch_JNP6181GVC_articulated_part;
-        additional_text:                string(STR_DESC_4, string(STR_TYPE_LONG_DISTANCE), string(STR_SIZE_EXTRA_LARGE), string(STR_CLASS_HIGH_2), string(STR_COMFORT, 157));
+        additional_text:                string(STR_DESC_4, string(STR_TYPE_URBAN), string(STR_SIZE_EXTRA_LARGE), string(STR_COMFORT, 157 ,string(STR_CLASS_HIGH_2)), string(STR_LOADING_SPEED, 60));
 
         cost_factor:                    288;
         running_cost_factor:            3 * runningcostfactor();

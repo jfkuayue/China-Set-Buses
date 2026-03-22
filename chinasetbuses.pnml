@@ -15,19 +15,27 @@
 #include "src/Articulated/JNP6181GVC.pnml"
 
 //Double-Decker
-
+#include "src/Double-Decker/Leyland_Olympian_11M.pnml"
 //Three-Axle
 
 //Two-Axle
+#include "src/Two-Axle/BJ6105CHEVCG_1.pnml"
 #include "src/Two-Axle/BK640.pnml"
 #include "src/Two-Axle/GTQ6105BEVBT20.pnml"
+#include "src/Two-Axle/GTQ6121BEVBT3.pnml"
 #include "src/Two-Axle/JNP6127EA.pnml"
+#include "src/Two-Axle/KLQ6129GE4_standard.pnml"
+#include "src/Two-Axle/KLQ6129GE4_high_spec.pnml"
 #include "src/Two-Axle/JT663.pnml"
+#include "src/Two-Axle/SWB6120V4LE.pnml"
+#include "src/Two-Axle/SWB6128V8LF.pnml"
+#include "src/Two-Axle/SWB6128V8LF_3D.pnml"
 #include "src/Two-Axle/LCK6820HG.pnml"
-#include "src/Two-Axle/ZK6125CHEVNPG29.pnml"
+#include "src/Two-Axle/XML6102J15Y_36seats.pnml"
+#include "src/Two-Axle/XML6102J15Y_48seats.pnml"
+#include "src/Two-Axle/ZK6125CHEVNPG29_standard.pnml"
+#include "src/Two-Axle/ZK6125CHEVNPG29_high_spec.pnml"
 #include "src/Two-Axle/ZK6845BEVG1.pnml"
-
-
 
 // Sort Vehicles
 #include "src/vehiclesort.pnml"
