@@ -1,0 +1,68 @@
+// Begin SWB6128V8LF_3D
+
+spriteset (spriteset_SWB6128V8LF_3D_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_purchase_32bpp ("Two-Axle", "SWB6128V8LF_3D_PUXI")
+}
+
+spriteset (spriteset_SWB6128V8LF_3D_green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_2 ("Two-Axle", "SWB6128V8LF_3D_PUXI")
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_SWB6128V8LF_3D_graphics, position_in_articulated_veh) {
+    1: spriteset_SWB6128V8LF_3D_green;
+    empty_sprites;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_SWB6128V8LF_3D_articulated_part, extra_callback_info1) {
+    1..2 : return SWB6128V8LF_3D;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+item (FEAT_ROADVEHS, SWB6128V8LF_3D) {
+    property {
+        sprite_id:                      SPRITE_ID_NEW_ROADVEH;
+        climates_available:             ALL_CLIMATES;
+        running_cost_base:              RUNNING_COST_ROADVEH;
+        refit_cost:                     0;
+        misc_flags:                     bitmask(ROADVEH_FLAG_AUTOREFIT);
+        variant_group:					SWB6128V8LF;
+
+        cost_factor:                    1;
+        running_cost_factor:            1;
+
+        length:                         7;
+        refittable_cargo_classes:       bitmask(CC_PASSENGERS);
+        cargo_allow_refit:              [PASS, TOUR, YETI, YETY];
+        default_cargo_type:             PASS;
+
+        name:                           string(STR_NAME_SWB6128V8LF_3D);
+        introduction_date:              date(2012,7,1);
+        model_life:                     60;
+        retire_early:                   50;
+        vehicle_life:                   13;
+        reliability_decay:              8;
+
+        power:                          199 kW;
+        weight:                         11.9 ton;
+        tractive_effort_coefficient:    0.3;
+        speed:                          70 km/h;
+
+        cargo_capacity:                 30;
+        loading_speed:                  60 << param_loading_speed;
+        cargo_age_period:               168 << param_cargo_decay;
+    }
+    graphics {
+        default:                        switch_SWB6128V8LF_3D_graphics;
+        purchase:                       spriteset_SWB6128V8LF_3D_purchase;
+        length:                         switch_2_7_2_length_11;
+        articulated_part:               switch_SWB6128V8LF_3D_articulated_part;
+        additional_text:                string(STR_DESC_4, string(STR_TYPE_URBAN), string(STR_SIZE_LARGE), string(STR_COMFORT, 168 ,string(STR_CLASS_HIGH_2)), string(STR_LOADING_SPEED, 60));
+
+        cost_factor:                    198;
+        running_cost_factor:            2 * runningcostfactor();
+        purchase_running_cost_factor:   2 * 8;
+        name:                           switch_sunwin_8_name;
+    }
+}
+
+// End SWB6128V8LF_3D

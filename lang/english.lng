@@ -14,7 +14,7 @@ STR_PARAM_PURCHASE_COST_DESC :Adjust vehicle purchase costs. Default is 25%.
 STR_PARAM_RUNNING_COST       :Running costs
 STR_PARAM_RUNNING_COST_DESC  :Adjust vehicle running costs. Default is 25%.
 
-STR_PARAM_NUM       :{COMMA}%
+STR_PARAM_NUM                :{COMMA}%
 
 STR_PARAM_CARGO_DECAY       :Cargo Age Period
 STR_PARAM_CARGO_DECAY_DESC  :Adjust cargo age period of coaches and wagons. "Long" is "Standard" doubled, while "Very Long" is "Long" doubled. Even in "Standard" mode, cargo age period varies.
@@ -31,20 +31,85 @@ STR_DESC_5                  :{STRING}{}{STRING}{}{STRING}{}{STRING}{}{STRING}
 STR_DESC_6                  :{STRING}{}{STRING}{}{STRING}{}{STRING}{}{STRING}{}{STRING}
 STR_LV                      :{STRING}{STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING} {STRING}
 
-STR_NAME_LCK6820HG          :LCK6820HG
-STR_NAME_BK640              :BK640
-STR_NAME_JNP6181GVC         :JNP6181GVC
-STR_NAME_ZK6845BEVG1        :ZK6845BEVG1
-STR_NAME_ZK6125CHEVNPG29    :ZK6125CHEVNPG29
-STR_NAME_JT663              :JT663
-STR_NAME_JNP6127EA          :JNP6127EA
-STR_NAME_GTQ6105BEVBT20     :GTQ6105BEVBT20
+STR_NAME_BJ6105CHEVCG_1             :BJ6105CHEVCG-1
+STR_NAME_BK640                      :BK640
+STR_NAME_GTQ6105BEVBT20             :GTQ6105BEVBT20
+STR_NAME_GTQ6121BEVBT3              :GTQ6121BEVBT3
+STR_NAME_JNP6127EA                  :JNP6127EA
+STR_NAME_JNP6181GVC                 :JNP6181GVC
+STR_NAME_JT663                      :JT663
+STR_NAME_KLQ6129GE4_HIGH_SPEC       :KLQ6129GE4  {SILVER}High-spec Version
+STR_NAME_KLQ6129GE4_STANDARD        :KLQ6129GE4  {SILVER}Standard Version
+STR_NAME_LCK6820HG                  :LCK6820HG
+STR_NAME_LEYLAND_OLYMPIAN_11M       :Leyland Olympian  {SILVER}11.3 Meters
+STR_NAME_SWB6120V4LE                :SWB6120V4LE
+STR_NAME_SWB6128V8LF                :SWB6128V8LF
+STR_NAME_SWB6128V8LF_3D             :SWB6128V8LF  {SILVER}3 Doors
+STR_NAME_TJ645B                     :TJ645B
+STR_NAME_XML6102J15Y_36SEATS        :XML6102J15Y  {SILVER}36 Seats
+STR_NAME_XML6102J15Y_48SEATS        :XML6102J15Y  {SILVER}48 Seats
+STR_NAME_ZK6100HGA                  :ZK6100HGA
+STR_NAME_ZK6125CHEVNPG29_HIGH_SPEC  :ZK6125CHEVNPG29  {SILVER}High-spec Version
+STR_NAME_ZK6125CHEVNPG29_STANDARD   :ZK6125CHEVNPG29  {SILVER}Standard Version
+STR_NAME_ZK6845BEVG1                :ZK6845BEVG1
+
+STR_LIST_KLQ6129GE4         :KLQ6129GE4
+STR_LIST_SHENHAO            :"Shenhao" Series
+STR_LIST_SUNWIN_8           :SUNWIN 8th Series
+STR_LIST_XML6102J15Y        :XML6105J15Y
+STR_LIST_ZK6125CHEVNPG29    :ZK6125CHEVNPG29
 
 STR_1                       :1
 STR_2                       :2
 
 STR_X                       :To Be Determined
 STR_RELDEC                  :Reliability Decay Speed: {COMMA}
-STR_COMFORT                 :Comfort: {COMMA}
-STR_LOADING                 :Loading Speed: {COMMA}
+STR_LOADING_SPEED           :{BLACK}Loading Speed: {GOLD}{COMMA}
 STR_LIVERY_AVAILABLE        :{BLACK}Livery Availability:
+STR_TYPE_URBAN              :{BLACK}Type: {LTBLUE}Urban Bus
+STR_TYPE_REGIONAL           :{BLACK}Type: {YELLOW}Regional/Suburban Bus
+STR_TYPE_LONG_DISTANCE      :{BLACK}Type: {WHITE}Long-distance Coach
+STR_TYPE_TOURIST            :{BLACK}Type: {WHITE}Tourist Coach
+STR_SIZE_MINI               :{BLACK}Size: {YELLOW}Mini
+STR_SIZE_MEDIUM             :{BLACK}Size: {GREEN}Medium
+STR_SIZE_LARGE              :{BLACK}Size: {LTBLUE}Large
+STR_SIZE_EXTRA_LARGE        :{BLACK}Size: {WHITE}Extra-large
+STR_CLASS_ORIDINARY         :{RED}Oridinary
+STR_CLASS_MEDIUM            :{YELLOW}Medium
+STR_CLASS_HIGH_1            :{GREEN}High I
+STR_CLASS_HIGH_2            :{LTBLUE}High II
+STR_CLASS_HIGH_3            :{WHITE}High III
+STR_COMFORT                 :{BLACK}Comfort: {GOLD}{COMMA}{BLACK} ({STRING}{BLACK})
+STR_COMFORT_WITHOUT_CLASS   :{BLACK}Comfort: {GOLD}{COMMA}
+
+STR_1L                      :{BLACK}One-step Version
+STR_2D                      :{BLACK}Two-door Version
+STR_2L                      :{BLACK}Two-step Version
+STR_2L_TJ                   :{BLACK}Two-step Version for {RED}Tianjin {SILVER}Public Transport {RED}Group
+STR_BJ_BAFANGDA             :{BLACK}Beijing {GREEN}"Ba{WHITE}fa{GREEN}ng{WHITE}da" {BLACK}Livery
+STR_BJ_BEIDIANLAN           :{SILVER}Beijing Public Transport {WHITE}Tram {LTBLUE}Branch Blue {YELLOW}Livery
+STR_BJ_BLUE_LUCKY_CLOUDS    :{BLACK}Beijing {LTBLUE}"Blue Lucky Clouds" {BLACK}Livery
+STR_BJ_GREEN_LUCKY_CLOUDS   :{BLACK}Beijing {GREEN}"Green Lucky Clouds" {BLACK}Livery
+STR_BJ_RED_LUCKY_CLOUDS     :{BLACK}Beijing {RED}"Red Lucky Clouds" {BLACK}Livery
+STR_BJ_YUNTONG              :{BLACK}Beijing {RED}Yuntong {SILVER}Bus Company {BLACK}Livery
+STR_CJ                      :{CREAM}Changji Public Transport Group {BLACK}Livery
+STR_CB                      :{BLACK}Hong Kong {YELLOW}Citybus {RED}Lim{BLUE}ited {BLACK}Livery
+STR_DT                      :{BLUE}Datong Public Transport {LTBLUE}Group {BLACK}Livery
+STR_FC_ORIGINAL             :{GREEN}Original Livery {BLACK}of "Elegance" Design
+STR_HB                      :{YELLOW}Harbin Public Transport Group {BLACK}Livery
+STR_KLB                     :{BLACK}Hong Kong {WHITE}KMB {RED}Group {BLACK}Livery
+STR_ORIGINAL                :{BLACK}Original Livery
+STR_SH_GREEN                :{BLACK}Shanghai {GREEN}Green {BLACK}Livery
+STR_SH_PUDONG_BLUE          :{BLACK}Shanghai {WHITE}Pudong {BLUE}Blue {BLACK}Livery
+STR_SH_WHITE_GREEN          :{BLACK}Shanghai {GREEN}Green {BLACK}Livery with {WHITE}White Eyes
+STR_SY                      :{WHITE}Shenyang {BLUE}Public {DKGREEN}Transport {GOLD}Group {BLACK}Livery
+STR_TJ                      :{RED}Tianjin {SILVER}Public Transport {RED}Group {BLACK}Livery
+STR_TJ_YING                 :{RED}Tianjin {SILVER}Public Transport {RED}Group {BLACK}Livery of "Eagle" Design
+STR_TJBH                    :{YELLOW}Tianjin Binhai Public {BLUE}Transport {DKGREEN}Group {BLACK}Livery
+STR_TJBH_WHITE              :{WHITE}Tianjin Binhai Public {BLUE}Transport {DKGREEN}Group {BLACK}Livery {WHITE}White Version
+STR_VIP                     :{GOLD}"VIP" {BLACK}Livery
+STR_WHITE                   :{WHITE}White {BLACK}Livery
+STR_YG_ORIGINAL             :{GREEN}Original Livery {BLACK}of "Sunshine" Design
+STR_YG_TJ                   :{RED}Tianjin {SILVER}Public Transport {RED}Group {BLACK}Livery of "Sunshine" Design
+STR_GZ_LOVELIVE_21          :{CREAM}CICF "Lovelive!" Livery of {GREEN}Guangzhou No.1 Bus Co.,{BLACK}2021
+

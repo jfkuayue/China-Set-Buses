@@ -7,3 +7,5 @@
 chinasetbuses-*
 custom_tags.txt
 gfx/**/*.png
+!gfx/empty.png
+!gfx/empty_32bpp.png

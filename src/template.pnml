@@ -51,7 +51,19 @@ template template_purchase_xl (a, b) {
     []
 }
 
-template template_32bpp (a, b) {
+
+
+template template_standard_0 (a, b) {
+    [  0,   0,  40,  160, -12, -68, "gfx/"+a+"/"+b+"_32bpp.png"]
+    [ 48,   0, 116,  109, -80, -50, "gfx/"+a+"/"+b+"_32bpp.png"]
+    [172,   0, 192,   80, -112, -62, "gfx/"+a+"/"+b+"_32bpp.png"]
+    [372,   0, 116,  109, -60, -62, "gfx/"+a+"/"+b+"_32bpp.png"]
+    [496,   0,  40,  160, -12, -94, "gfx/"+a+"/"+b+"_32bpp.png"]
+    [544,   0, 116,  109, -58, -64, "gfx/"+a+"/"+b+"_32bpp.png"]
+    [668,   0, 192,   80, -48, -62, "gfx/"+a+"/"+b+"_32bpp.png"]
+    [868,   0, 116,  109, -30, -56, "gfx/"+a+"/"+b+"_32bpp.png"]
+}
+template template_standard_2 (a, b) {
     [  0,   0,  40,  160, -12, -84, "gfx/"+a+"/"+b+"_32bpp.png"]
     [ 48,   0, 116,  109, -64, -58, "gfx/"+a+"/"+b+"_32bpp.png"]
     [172,   0, 192,   80, -80, -62, "gfx/"+a+"/"+b+"_32bpp.png"]
@@ -65,3 +77,15 @@ template template_32bpp (a, b) {
 spriteset (empty_sprites, "gfx/empty.png") {
   [0, 0, 2, 2, 0, 0, CROP]
 }
+
+
+/*
+ 0, -8, 
+ 8, -4,
+ 16, 0, 
+ 8, 4,
+ 0, 8,
+ -8, 4,
+ -16, 0,
+ -8, -4,
+ */

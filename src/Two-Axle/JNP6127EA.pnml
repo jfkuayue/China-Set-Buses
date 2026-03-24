@@ -1,13 +1,30 @@
+// Begin JNP6127EA
+
 spriteset (spriteset_JNP6127EA_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_purchase_32bpp ("Two-Axle", "JNP6127EA_QN")
+    template_purchase_32bpp ("Two-Axle", "JNP6127EA")
 }
 
-spriteset (spriteset_JNP6127EA_QN, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_32bpp ("Two-Axle", "JNP6127EA_QN")
+spriteset (spriteset_JNP6127EA_original, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_2 ("Two-Axle", "JNP6127EA")
+}
+
+spriteset (spriteset_JNP6127EA_VIP, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_2 ("Two-Axle", "JNP6127EA_VIP")
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_JNP6127EA_cargo_subtype, cargo_subtype) {
+    0: return string(STR_ORIGINAL);
+    1: return string(STR_VIP);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_JNP6127EA_cargo_graphics, cargo_subtype) {
+    0: spriteset_JNP6127EA_original;
+    1: spriteset_JNP6127EA_VIP;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_JNP6127EA_graphics, position_in_articulated_veh) {
-    1: spriteset_JNP6127EA_QN;
+    1: switch_JNP6127EA_cargo_graphics;
     empty_sprites;
 }
 
@@ -33,27 +50,31 @@ item (FEAT_ROADVEHS, JNP6127EA) {
 
         name:                           string(STR_NAME_JNP6127EA);
         introduction_date:              date(2010,1,1);
-        model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   20;
-        reliability_decay:              15;
+        model_life:                     60;
+        retire_early:                   50;
+        vehicle_life:                   15;
+        reliability_decay:              4;
 
-        power:                          200 kW;
+        power:                          228 kW;
         weight:                         13.1 ton;
         tractive_effort_coefficient:    0.3;
-        speed:                          70 km/h;
+        speed:                          120 km/h;
 
-        cargo_capacity:                 18;
-        loading_speed:                  9 << param_loading_speed;
-        cargo_age_period:               169 << param_cargo_decay;
+        cargo_capacity:                 16 ;
+        loading_speed:                  20 << param_loading_speed;
+        cargo_age_period:               224 << param_cargo_decay;
     }
     graphics {
         default:                        switch_JNP6127EA_graphics;
         purchase:                       spriteset_JNP6127EA_purchase;
-        length:                         switch_1_7_1_length_9;
+        cargo_subtype_text:             switch_JNP6127EA_cargo_subtype;
+        length:                         switch_2_7_2_length_11;
         articulated_part:               switch_JNP6127EA_articulated_part;
-
-        cost_factor:                    67;
-        running_cost_factor:            143 * runningcostfactor();
-        purchase_running_cost_factor:   143 * 8;
+        additional_text:                string(STR_DESC_4, string(STR_TYPE_LONG_DISTANCE), string(STR_SIZE_LARGE), string(STR_COMFORT, 224 ,string(STR_CLASS_HIGH_1)), string(STR_LOADING_SPEED, 20));
+        cost_factor:                    231;
+        running_cost_factor:            3 * runningcostfactor();
+        purchase_running_cost_factor:   3 * 8;
     }
 }
+
+// End JNP6127EA 

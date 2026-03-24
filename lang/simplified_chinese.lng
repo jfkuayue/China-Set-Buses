@@ -22,16 +22,66 @@ STR_PARAM_VERY_LONG         :很长
 
 STR_USED_WITH_DYNAMIC_ENGINES       :请切换至控制台模式, 键入 "set dynamic_engines 1", 否则您无法游玩中国包。
 
+STR_NAME_KLQ6129GE4_HIGH_SPEC       :KLQ6129GE4  {SILVER}高配版
+STR_NAME_KLQ6129GE4_STANDARD        :KLQ6129GE4  {SILVER}标配版
+STR_NAME_LEYLAND_OLYMPIAN_11M       :利兰奥林比安  {SILVER}11.3米
+STR_NAME_SWB6128V8LF_3D             :SWB6128V8LF  {SILVER}3门版
+STR_NAME_XML6102J15Y_36SEATS        :XML6102J15Y  {SILVER}36座
+STR_NAME_XML6102J15Y_48SEATS        :XML6102J15Y  {SILVER}48座
+STR_NAME_ZK6125CHEVNPG29_HIGH_SPEC  :ZK6125CHEVNPG29  {SILVER}高配版
+STR_NAME_ZK6125CHEVNPG29_STANDARD   :ZK6125CHEVNPG29  {SILVER}标配版
 
-STR_NAME_LCK6820HG          :LCK6820HG
-STR_NAME_BK640              :BK640
-STR_NAME_JNP6181GVC         :JNP6181GVC
-STR_NAME_ZK6845BEVG1        :ZK6845BEVG1
-STR_NAME_JT663              :JT663
-STR_NAME_JNP6127EA          :JNP6127EA
+STR_LIST_SHENHAO            :“申豪”系列
+STR_LIST_SUNWIN_8           :申沃8系
 
 STR_X                       :待定
 STR_RELDEC                  :可靠性下降速度：{COMMA}
-STR_COMFORT                 :舒适度：{COMMA}
-STR_LOADING                 :装载速度：{COMMA}
+STR_LOADING_SPEED           :{BLACK}装载速度：{GOLD}{COMMA}
 STR_LIVERY_AVAILABLE        :{BLACK}可供选择的涂装：
+STR_TYPE_URBAN              :{BLACK}类型：{LTBLUE}城市客车
+STR_TYPE_REGIONAL           :{BLACK}类型：{YELLOW}城郊客车
+STR_TYPE_LONG_DISTANCE      :{BLACK}类型：{WHITE}长途客车
+STR_TYPE_TOURIST            :{BLACK}类型：{WHITE}旅游客车
+STR_SIZE_MINI               :{BLACK}尺寸：{YELLOW}小型
+STR_SIZE_MEDIUM             :{BLACK}尺寸：{GREEN}中型
+STR_SIZE_LARGE              :{BLACK}尺寸：{LTBLUE}大型
+STR_SIZE_EXTRA_LARGE        :{BLACK}尺寸：{WHITE}特大型
+STR_CLASS_ORIDINARY         :{RED}普通级
+STR_CLASS_MEDIUM            :{YELLOW}中级
+STR_CLASS_HIGH_1            :{GREEN}高一级
+STR_CLASS_HIGH_2            :{LTBLUE}高二级
+STR_CLASS_HIGH_3            :{WHITE}高三级
+STR_COMFORT                 :{BLACK}舒适度：{GOLD}{COMMA}{BLACK}（{STRING}{BLACK}）
+STR_COMFORT_WITHOUT_CLASS   :{BLACK}舒适度：{GOLD}{COMMA}
+
+STR_1L                      :{BLACK}一级踏步版本
+STR_2D                      :{BLACK}两侧车门版本
+STR_2L                      :{BLACK}二级踏步版本
+STR_2L_TJ                   :{RED}天{SILVER}津公交集{RED}团{BLACK}二级踏步版本
+STR_BJ_BAFANGDA             :{BLACK}北京公交{GREEN}“八{WHITE}方{GREEN}达”{BLACK}涂装
+STR_BJ_BEIDIANLAN           :{SILVER}北京公交电车{WHITE}分公司{LTBLUE}蓝色涂装
+STR_BJ_BLUE_LUCKY_CLOUDS    :{BLACK}北京公交{LTBLUE}“蓝祥云”{BLACK}涂装
+STR_BJ_GREEN_LUCKY_CLOUDS   :{BLACK}北京公交{GREEN}“绿祥云”{BLACK}涂装
+STR_BJ_RED_LUCKY_CLOUDS     :{BLACK}北京公交{RED}“红祥云”{BLACK}涂装
+STR_BJ_YUNTONG              :{RED}北京{SILVER}运通{RED}客运{BLACK}涂装
+STR_CJ                      :{CREAM}昌吉公交集团{BLACK}涂装
+STR_CB                      :{BLACK}香港{YELLOW}城巴{RED}集{BLUE}团{BLACK}涂装
+STR_DT                      :{BLUE}大同公交{LTBLUE}集团{BLACK}涂装
+STR_FC_ORIGINAL             :{BLACK}“风采”造型{GREEN}原版{BLACK}涂装
+STR_HB                      :{YELLOW}哈尔滨公交集团{BLACK}涂装
+STR_KLB                     :{BLACK}香港{WHITE}九龙{RED}巴士{BLACK}涂装
+STR_ORIGINAL                :{BLACK}原版涂装
+STR_SH_GREEN                :{BLACK}上海{GREEN}绿色{BLACK}涂装
+STR_SH_PUDONG_BLUE          :{BLACK}上海{WHITE}浦东{BLUE}蓝色{BLACK}涂装
+STR_SH_WHITE_GREEN          :{BLACK}上海{WHITE}白眼{GREEN}绿色{BLACK}涂装
+STR_SY                      :{WHITE}沈阳{BLUE}客运{DKGREEN}集{GOLD}团{BLACK}涂装
+STR_TJ                      :{RED}天{SILVER}津公交集{RED}团{BLACK}涂装
+STR_TJ_YING                 :{BLACK}“飞鹰”造型{RED}天{SILVER}津公交集{RED}团{BLACK}涂装
+STR_TJBH                    :{YELLOW}天津滨海{BLUE}公交{DKGREEN}集团{BLACK}涂装
+STR_TJBH_WHITE              :{WHITE}天津滨海{BLUE}公交{DKGREEN}集团{WHITE}白色{BLACK}涂装
+STR_VIP                     :{GOLD}“VIP”{BLACK}涂装
+STR_WHITE                   :{WHITE}白色{BLACK}涂装
+STR_YG_ORIGINAL             :{BLACK}“阳光”造型{GREEN}原版{BLACK}涂装
+STR_YG_TJ                   :{BLACK}“阳光”造型{RED}天{SILVER}津公交集{RED}团{BLACK}涂装
+
+

@@ -1,9 +1,11 @@
+// Begin BK640
+
 spriteset (spriteset_BK640_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
     template_purchase_32bpp ("Two-Axle", "BK640oil_BJ")
 }
 
-spriteset (spriteset_BK640, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_32bpp ("Two-Axle", "BK640oil_BJ")
+spriteset (spriteset_BK640_original, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_0 ("Two-Axle", "BK640oil_BJ")
 }
 
 
@@ -24,9 +26,10 @@ item (FEAT_ROADVEHS, BK640) {
 
         name:                           string(STR_NAME_BK640);
         introduction_date:              date(1957,12,1);
-        model_life:                     VEHICLE_NEVER_EXPIRES;
+        model_life:                     60;
+        retire_early:                   43;
         vehicle_life:                   20;
-        reliability_decay:              15;
+        reliability_decay:              16;
 
         power:                          66 kW;
         weight:                         6.8 ton;
@@ -34,15 +37,18 @@ item (FEAT_ROADVEHS, BK640) {
         speed:                          65 km/h;
 
         cargo_capacity:                 80;
-        loading_speed:                  9 << param_loading_speed;
-        cargo_age_period:               169 << param_cargo_decay;
+        loading_speed:                  20 << param_loading_speed;
+        cargo_age_period:               102 << param_cargo_decay;
     }
     graphics {
-        default:                        spriteset_BK640;
+        default:                        spriteset_BK640_original;
         purchase:                       spriteset_BK640_purchase;
+        additional_text:                string(STR_DESC_4, string(STR_TYPE_URBAN), string(STR_SIZE_MEDIUM), string(STR_COMFORT, 102 ,string(STR_CLASS_ORIDINARY)), string(STR_LOADING_SPEED, 20));
 
-        cost_factor:                    67;
-        running_cost_factor:            143 * runningcostfactor();
-        purchase_running_cost_factor:   143 * 8;
+        cost_factor:                    59;
+        running_cost_factor:            1 * runningcostfactor();
+        purchase_running_cost_factor:   1 * 8;
     }
 }
+
+// End BK640

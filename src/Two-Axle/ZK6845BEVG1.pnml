@@ -1,23 +1,25 @@
+// Begin ZK6845BEVG1
+
 spriteset (spriteset_ZK6845BEVG1_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_purchase_32bpp ("Two-Axle", "ZK6845BEVG1_YT")
+    template_purchase_32bpp ("Two-Axle", "ZK6845BEVG1")
 }
 
-spriteset (spriteset_ZK6845BEVG1_YT, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_32bpp ("Two-Axle", "ZK6845BEVG1_YT")
+spriteset (spriteset_ZK6845BEVG1_original, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_0 ("Two-Axle", "ZK6845BEVG1")
 }
 
 spriteset (spriteset_ZK6845BEVG1_TJBH, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_32bpp ("Two-Axle", "ZK6845BEVG1_TJBH")
+    template_standard_0 ("Two-Axle", "ZK6845BEVG1_TJBH")
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_ZK6845BEVG1_cargo_subtype, cargo_subtype) {
-    0: return string(STR_1);
-    1: return string(STR_2);
+    0: return string(STR_ORIGINAL);
+    1: return string(STR_TJBH);
     return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_ZK6845BEVG1_graphics, cargo_subtype) {
-    0: spriteset_ZK6845BEVG1_YT;
+    0: spriteset_ZK6845BEVG1_original;
     1: spriteset_ZK6845BEVG1_TJBH;
 }
 
@@ -38,26 +40,30 @@ item (FEAT_ROADVEHS, ZK6845BEVG1) {
 
         name:                           string(STR_NAME_ZK6845BEVG1);
         introduction_date:              date(2013,02,18);
-        model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   20;
-        reliability_decay:              15;
+        model_life:                     60;
+        retire_early:                   50;
+        vehicle_life:                   13;
+        reliability_decay:              8;
 
         power:                          100 kW;
         weight:                         8.5 ton;
         tractive_effort_coefficient:    0.3;
         speed:                          70 km/h;
 
-        cargo_capacity:                 55;
-        loading_speed:                  9 << param_loading_speed;
-        cargo_age_period:               169 << param_cargo_decay;
+        cargo_capacity:                 72;
+        loading_speed:                  30 << param_loading_speed;
+        cargo_age_period:               146 << param_cargo_decay;
     }
     graphics {
         default:                        switch_ZK6845BEVG1_graphics;
         purchase:                       spriteset_ZK6845BEVG1_purchase;
         cargo_subtype_text:             switch_ZK6845BEVG1_cargo_subtype;
+        additional_text:                string(STR_DESC_4, string(STR_TYPE_URBAN), string(STR_SIZE_MEDIUM), string(STR_COMFORT, 146 ,string(STR_CLASS_HIGH_2)), string(STR_LOADING_SPEED, 30));
 
-        cost_factor:                    67;
-        running_cost_factor:            143 * runningcostfactor();
-        purchase_running_cost_factor:   143 * 8;
+        cost_factor:                    147;
+        running_cost_factor:            1 * runningcostfactor();
+        purchase_running_cost_factor:   1 * 8;
     }
 }
+
+// End ZK6845BEVG1

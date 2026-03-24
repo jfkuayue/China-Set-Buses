@@ -6,14 +6,14 @@ switch (FEAT_ROADVEHS, SELF, runningcostfactor, current_speed * 10 / max_speed) 
 }
 
 
-switch (FEAT_ROADVEHS, SELF, switch_1_7_1_length_9, position_in_articulated_veh) {
-    1: return 7;
+switch (FEAT_ROADVEHS, SELF, switch_8_1_length_9, position_in_articulated_veh) {
+    0: return 8;
     return 1;
 }
 
-switch (FEAT_ROADVEHS, SELF, switch_1_8_1_length_10, position_in_articulated_veh) {
-    1: return 8;
-    return 1;
+switch (FEAT_ROADVEHS, SELF, switch_8_2_length_10, position_in_articulated_veh) {
+    0: return 8;
+    return 2;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_2_7_2_length_11, position_in_articulated_veh) {
