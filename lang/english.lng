@@ -111,4 +111,5 @@ STR_VIP                     :{GOLD}"VIP" {BLACK}Livery
 STR_WHITE                   :{WHITE}White {BLACK}Livery
 STR_YG_ORIGINAL             :{GREEN}Original Livery {BLACK}of "Sunshine" Design
 STR_YG_TJ                   :{RED}Tianjin {SILVER}Public Transport {RED}Group {BLACK}Livery of "Sunshine" Design
+STR_GZ_LOVELIVE_21          :{PINK}CICF "Lovelive!" Livery of {GREEN}Guangzhou No.1 Bus Co.,{BLACK}2021
 
