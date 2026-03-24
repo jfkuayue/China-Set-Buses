@@ -5,16 +5,16 @@ spriteset (spriteset_BJ6105CHEVCG_1_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)
 }
 
 spriteset (spriteset_BJ6105CHEVCG_1_original, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2 ("Two-Axle", "ZK6125CHEVNPG29")
+    template_standard_0 ("Two-Axle", "BJ6105CHEVCG_1_TJ")
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_BJ6105CHEVCG_1_graphics, position_in_articulated_veh) {
-    1: spriteset_BJ6105CHEVCG_1_original;
+    0: spriteset_BJ6105CHEVCG_1_original;
     empty_sprites;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_BJ6105CHEVCG_1_articulated_part, extra_callback_info1) {
-    1..2 : return BJ6105CHEVCG_1;
+    1 : return BJ6105CHEVCG_1;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -52,7 +52,7 @@ item (FEAT_ROADVEHS, BJ6105CHEVCG_1) {
     graphics {
         default:                        switch_BJ6105CHEVCG_1_graphics;
         purchase:                       spriteset_BJ6105CHEVCG_1_purchase;
-        length:                         switch_1_8_1_length_10;
+        length:                         switch_8_2_length_10;
         articulated_part:               switch_BJ6105CHEVCG_1_articulated_part;
         additional_text:                string(STR_DESC_4, string(STR_TYPE_URBAN), string(STR_SIZE_LARGE), string(STR_COMFORT, 158 ,string(STR_CLASS_HIGH_2)), string(STR_LOADING_SPEED, 40));
 

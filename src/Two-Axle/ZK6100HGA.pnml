@@ -5,23 +5,23 @@ spriteset (spriteset_ZK6100HGA_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
 }
 
 spriteset (spriteset_ZK6100HGA_original, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2 ("Two-Axle", "ZK6100HGA")
+    template_standard_0 ("Two-Axle", "ZK6100HGA")
 }
 
 spriteset (spriteset_ZK6100HGA_TJ, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2 ("Two-Axle", "ZK6100HGA_TJ")
+    template_standard_0 ("Two-Axle", "ZK6100HGA_TJ")
 }
 
 spriteset (spriteset_ZK6100HGA_TJ_YING, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2 ("Two-Axle", "ZK6100HGA_YING_TJ")
+    template_standard_0 ("Two-Axle", "ZK6100HGA_YING_TJ")
 }
 
 spriteset (spriteset_ZK6100HGA_TJBH, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2 ("Two-Axle", "ZK6100HGA_TJBH")
+    template_standard_0 ("Two-Axle", "ZK6100HGA_TJBH")
 }
 
 spriteset (spriteset_ZK6100HGA_TJBH_WHITE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2 ("Two-Axle", "ZK6100HGA_WHITE_TJBH")
+    template_standard_0 ("Two-Axle", "ZK6100HGA_WHITE_TJBH")
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_ZK6100HGA_cargo_subtype, cargo_subtype) {
@@ -42,12 +42,12 @@ switch (FEAT_ROADVEHS, SELF, switch_ZK6100HGA_cargo_graphics, cargo_subtype) {
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_ZK6100HGA_graphics, position_in_articulated_veh) {
-    1: switch_ZK6100HGA_cargo_graphics;
+    0: switch_ZK6100HGA_cargo_graphics;
     empty_sprites;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_ZK6100HGA_articulated_part, extra_callback_info1) {
-    1..2 : return ZK6100HGA;
+    1: return ZK6100HGA;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -87,7 +87,7 @@ item (FEAT_ROADVEHS, ZK6100HGA) {
         default:                        switch_ZK6100HGA_graphics;
         purchase:                       spriteset_ZK6100HGA_purchase;
         cargo_subtype_text:             switch_ZK6100HGA_cargo_subtype;
-        length:                         switch_1_8_1_length_10;
+        length:                         switch_8_2_length_10;
         articulated_part:               switch_ZK6100HGA_articulated_part;
         additional_text:                string(STR_DESC_4, string(STR_TYPE_URBAN), string(STR_SIZE_LARGE), string(STR_COMFORT, 123 ,string(STR_CLASS_ORIDINARY)), string(STR_LOADING_SPEED, 40));
 

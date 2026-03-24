@@ -9,12 +9,12 @@ spriteset (spriteset_GTQ6105BEVBT20_TJ, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_GTQ6105BEVBT20_graphics, position_in_articulated_veh) {
-    1: spriteset_GTQ6105BEVBT20_TJ;
+    0: spriteset_GTQ6105BEVBT20_TJ;
     empty_sprites;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_GTQ6105BEVBT20_articulated_part, extra_callback_info1) {
-    1..2 : return GTQ6105BEVBT20;
+    1: return GTQ6105BEVBT20;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -53,7 +53,7 @@ item (FEAT_ROADVEHS, GTQ6105BEVBT20) {
     graphics {
         default:                        switch_GTQ6105BEVBT20_graphics;
         purchase:                       spriteset_GTQ6105BEVBT20_purchase;
-        length:                         switch_1_8_1_length_10;
+        length:                         switch_8_2_length_10;
         articulated_part:               switch_GTQ6105BEVBT20_articulated_part;
         additional_text:                string(STR_DESC_4, string(STR_TYPE_URBAN), string(STR_SIZE_LARGE), string(STR_COMFORT, 160 ,string(STR_CLASS_HIGH_2)), string(STR_LOADING_SPEED, 40));
 

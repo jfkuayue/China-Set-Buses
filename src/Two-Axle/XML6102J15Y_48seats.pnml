@@ -5,16 +5,16 @@ spriteset (spriteset_XML6102J15Y_48seats_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_3
 }
 
 spriteset (spriteset_XML6102J15Y_48seats_original, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2 ("Two-Axle", "XML6102J15Y")
+    template_standard_0 ("Two-Axle", "XML6102J15Y")
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_XML6102J15Y_48seats_graphics, position_in_articulated_veh) {
-    1: spriteset_XML6102J15Y_48seats_original;
+    0: spriteset_XML6102J15Y_48seats_original;
     empty_sprites;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_XML6102J15Y_48seats_articulated_part, extra_callback_info1) {
-    1..2 : return XML6102J15Y_48seats;
+    1 : return XML6102J15Y_48seats;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -54,7 +54,7 @@ item (FEAT_ROADVEHS, XML6102J15Y_48seats) {
     graphics {
         default:                        switch_XML6102J15Y_48seats_graphics;
         purchase:                       spriteset_XML6102J15Y_48seats_purchase;
-        length:                         switch_1_8_1_length_10;
+        length:                         switch_8_2_length_10;
         articulated_part:               switch_XML6102J15Y_48seats_articulated_part;
         additional_text:                string(STR_DESC_4, string(STR_TYPE_LONG_DISTANCE), string(STR_SIZE_LARGE), string(STR_COMFORT, 170 ,string(STR_CLASS_MEDIUM)), string(STR_LOADING_SPEED, 20));
         cost_factor:                    202;

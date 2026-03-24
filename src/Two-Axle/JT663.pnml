@@ -11,12 +11,12 @@ switch (FEAT_ROADVEHS, SELF, switch_JT663_cargo_graphics, cargo_subtype) {
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_JT663_graphics, position_in_articulated_veh) {
-    1: switch_JT663_cargo_graphics;
+    0: switch_JT663_cargo_graphics;
     empty_sprites;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_JT663_articulated_part, extra_callback_info1) {
-    1..2 : return JT663;
+    1: return JT663;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -53,9 +53,9 @@ item (FEAT_ROADVEHS, JT663) {
         cargo_age_period:               138 << param_cargo_decay;
     }
     graphics {
-        default:                        spriteset_JT663;
+        default:                        switch_JT663_graphics;
         purchase:                       spriteset_JT663_purchase;
-        length:                         switch_1_7_1_length_9;
+        length:                         switch_8_1_length_9;
         articulated_part:               switch_JT663_articulated_part;
         additional_text:                string(STR_DESC_4, string(STR_TYPE_LONG_DISTANCE), string(STR_SIZE_MEDIUM), string(STR_COMFORT, 138 ,string(STR_CLASS_ORIDINARY)), string(STR_LOADING_SPEED, 10));
 

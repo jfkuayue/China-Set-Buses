@@ -30,12 +30,12 @@ switch (FEAT_ROADVEHS, SELF, switch_Leyland_Olympian_11M_cargo_graphics, cargo_s
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_Leyland_Olympian_11M_graphics, position_in_articulated_veh) {
-    1: switch_Leyland_Olympian_11M_cargo_graphics;
+    0: switch_Leyland_Olympian_11M_cargo_graphics;
     empty_sprites;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_Leyland_Olympian_11M_articulated_part, extra_callback_info1) {
-    1..2 : return Leyland_Olympian_11M;
+    1: return Leyland_Olympian_11M;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -73,7 +73,7 @@ item (FEAT_ROADVEHS, Leyland_Olympian_11M) {
     graphics {
         default:                        switch_Leyland_Olympian_11M_graphics;
         purchase:                       spriteset_Leyland_Olympian_11M_purchase;
-        length:                         switch_1_8_1_length_10;
+        length:                         switch_8_2_length_10;
         cargo_subtype_text:             switch_Leyland_Olympian_11M_cargo_subtype;
         additional_text:                string(STR_DESC_4, string(STR_TYPE_URBAN), string(STR_SIZE_MEDIUM), string(STR_COMFORT_WITHOUT_CLASS, 138), string(STR_LOADING_SPEED, 30));
         articulated_part:               switch_Leyland_Olympian_11M_articulated_part;
