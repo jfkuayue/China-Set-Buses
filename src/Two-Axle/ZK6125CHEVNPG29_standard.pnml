@@ -24,11 +24,16 @@ spriteset (spriteset_ZK6125CHEVNPG29_standard_SY, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32
     template_standard_2 ("Two-Axle", "ZK6125CHEVNPG29_SY")
 }
 
+spriteset (spriteset_ZK6125CHEVNPG29_high_spec_HB, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_2 ("Two-Axle", "ZK6125CHEVNPG29_HB")
+}
+
 switch (FEAT_ROADVEHS, SELF, switch_ZK6125CHEVNPG29_standard_cargo_subtype, cargo_subtype) {
     0: return string(STR_ORIGINAL);
     1: return string(STR_DT);
     2: return string(STR_CJ);
     3: return string(STR_SY);
+    4: return string(STR_HB); 
     return CB_RESULT_NO_TEXT;
 }
 
@@ -37,6 +42,7 @@ switch (FEAT_ROADVEHS, SELF, switch_ZK6125CHEVNPG29_standard_cargo_graphics, car
     1: spriteset_ZK6125CHEVNPG29_standard_DT;
     2: spriteset_ZK6125CHEVNPG29_standard_CJ;
     3: spriteset_ZK6125CHEVNPG29_standard_SY;
+    4: spriteset_ZK6125CHEVNPG29_high_spec_HB;
 }
 
 switch (FEAT_ROADVEHS, SELF, switch_ZK6125CHEVNPG29_standard_graphics, position_in_articulated_veh) {

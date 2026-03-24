@@ -1,3 +1,5 @@
+// Begin BK640
+
 spriteset (spriteset_BK640_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
     template_purchase_32bpp ("Two-Axle", "BK640oil_BJ")
 }
@@ -48,3 +50,5 @@ item (FEAT_ROADVEHS, BK640) {
         purchase_running_cost_factor:   1 * 8;
     }
 }
+
+// End BK640

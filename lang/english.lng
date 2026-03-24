@@ -45,8 +45,10 @@ STR_NAME_LEYLAND_OLYMPIAN_11M       :Leyland Olympian  {SILVER}11.3 Meters
 STR_NAME_SWB6120V4LE                :SWB6120V4LE
 STR_NAME_SWB6128V8LF                :SWB6128V8LF
 STR_NAME_SWB6128V8LF_3D             :SWB6128V8LF  {SILVER}3 Doors
+STR_NAME_TJ645B                     :TJ645B
 STR_NAME_XML6102J15Y_36SEATS        :XML6102J15Y  {SILVER}36 Seats
 STR_NAME_XML6102J15Y_48SEATS        :XML6102J15Y  {SILVER}48 Seats
+STR_NAME_ZK6100HGA                  :ZK6100HGA
 STR_NAME_ZK6125CHEVNPG29_HIGH_SPEC  :ZK6125CHEVNPG29  {SILVER}High-spec Version
 STR_NAME_ZK6125CHEVNPG29_STANDARD   :ZK6125CHEVNPG29  {SILVER}Standard Version
 STR_NAME_ZK6845BEVG1                :ZK6845BEVG1
@@ -102,7 +104,9 @@ STR_SH_PUDONG_BLUE          :{BLACK}Shanghai {WHITE}Pudong {BLUE}Blue {BLACK}Liv
 STR_SH_WHITE_GREEN          :{BLACK}Shanghai {GREEN}Green {BLACK}Livery with {WHITE}White Eyes
 STR_SY                      :{WHITE}Shenyang {BLUE}Public {DKGREEN}Transport {GOLD}Group {BLACK}Livery
 STR_TJ                      :{RED}Tianjin {SILVER}Public Transport {RED}Group {BLACK}Livery
+STR_TJ_YING                 :{RED}Tianjin {SILVER}Public Transport {RED}Group {BLACK}Livery of "Eagle" Design
 STR_TJBH                    :{YELLOW}Tianjin Binhai Public {BLUE}Transport {DKGREEN}Group {BLACK}Livery
+STR_TJBH_WHITE              :{WHITE}Tianjin Binhai Public {BLUE}Transport {DKGREEN}Group {BLACK}Livery {WHITE}White Version
 STR_VIP                     :{GOLD}"VIP" {BLACK}Livery
 STR_WHITE                   :{WHITE}White {BLACK}Livery
 STR_YG_ORIGINAL             :{GREEN}Original Livery {BLACK}of "Sunshine" Design

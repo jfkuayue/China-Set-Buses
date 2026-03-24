@@ -98,7 +98,7 @@ item (FEAT_ROADVEHS, SWB6120V4LE) {
         cost_factor:                    195;
         running_cost_factor:            3 * runningcostfactor();
         purchase_running_cost_factor:   3 * 8;
-        //当“申豪”系列新增其它车辆时删除该注释 name:                           switch_shenhao_name;
+        //当“申豪”系列新增其它车辆时取消该注释 name:                           switch_shenhao_name;
     }
 }
 
